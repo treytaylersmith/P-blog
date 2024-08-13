@@ -11,7 +11,7 @@ A Kanban board for task management
 n/a
 
 ## Assets
-Use [this link](https://treytaylersmith.github.io/Task-Board/) to visit the page.
+Use [this link](https://treytaylersmith.github.io/Personal-Blog/) to visit the page.
 
 ## Usage
 
