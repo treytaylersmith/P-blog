@@ -67,7 +67,7 @@ $(document).ready(() =>{
 
     colorSwitchEl.on('click',switchColorScheme);
 
-    backButtonEl.on('click',() =>{window.location.href = "./home.html"});
+    backButtonEl.on('click',() =>{window.location.href = "./index.html"});
 
     createBlog();
 
