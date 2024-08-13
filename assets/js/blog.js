@@ -1,7 +1,7 @@
 const blogSpotEl = $('#blog-spot');
 const backButtonEl = $('#back-btn');
-const colorSwitchEl = $('#switch');
-const body = $('<body>');
+const colorSwitchEl = $('#color');
+const body = $('#body');
 
 
 
@@ -27,12 +27,13 @@ function createBlog(){
 
     for(post of blog){
         const box = $('<div>')
-            .addClass('box blog-post border border-danger my-3');
+            .addClass('box border border-2 my-3 p-2');
         
         const user = $('<h6>')
             .text(post.username);
         const title = $('<h4>')
-            .text(post.title);
+            .text(post.title)
+            .addClass('text-decoration-underline');
         const content = $('<p>')
             .text(post.text);
         
@@ -46,7 +47,7 @@ function createBlog(){
 
 function switchColorScheme(event){
     event.preventDefault();
-
+    console.log('Color Button Pressed');
   
     
     if(body.hasClass('light')){

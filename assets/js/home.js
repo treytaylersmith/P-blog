@@ -2,8 +2,8 @@ const usernameInputEl = $('#username');
 const titleInputEl = $('#title-input');
 const blogInputEl = $('#blog-input');
 const blogPostFormEl = $('#blog-post-form');
-const colorSwitchEl = $('#switch');
-const body = $('<body>');
+const colorSwitchEl = $('#color');
+const body = $('#body');
 
 function updateLocalStorage(post) {
     console.log(post);
@@ -35,9 +35,10 @@ function handleSubmit(event){
 
 function switchColorScheme(event){
     event.preventDefault();
-
+    console.log('Color Button Pressed');
     if(body.hasClass('light')){
-        body.removeClass('light').addClass('dark');
+        body.removeClass('light')
+        body.addClass('dark');
     }
     else{
         body.removeClass('dark').addClass('light');
@@ -50,6 +51,7 @@ $(document).ready(() =>{
     body.addClass('light');
 
     colorSwitchEl.on('click',switchColorScheme);
+
     blogPostFormEl.on('submit', handleSubmit);
 
 
